@@ -4,7 +4,7 @@ p{
 iframe{
     width: 100%;
     height: 33vw;
-
+    border: none;
 }
 .border-top{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
