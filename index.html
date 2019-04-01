@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Youtube-Clone</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="flex-row space-between align-center h-padding">
+            <!--menu and logo-->
+            <div class="flex-row align-center">
+                <div class="button h-margin">
+                    <a class="weak" href="">
+                        <img class="contained-img" src="images/menu.png" alt="Menu button">
+                    </a>
+                </div>
+                <div class="logo h-margin">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img class="contained-img" src="images/800px-Logo_YouTube_por_Hernando.svg.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <!--search bar-->
+            <div class="flex-row">
+                <input id="search-bar" type="search" placeholder="Search">
+                <button id="search-button" class="weak" type="submit" value="Submit">
+                    <img class="button auto-margin" src="images/magnifier.png" alt="Search button">
+                </button>
+            </div>
+            <!--small buttons-->
+            <div class="flex-row align-center">
+                <div class="button h-margin">
+                    <a class="weak" href="">
+                        <img class="contained-img" src="images/new_vid.png" alt="New video button">
+                    </a>
+                </div>
+                <div class="button h-margin">
+                    <a class="weak" href="">
+                        <img class="contained-img" src="images/apps.png" alt="Apps button">
+                    </a>
+                </div>
+                <div class="button h-margin">
+                    <a class="weak" href="">
+                        <img class="contained-img" src="images/messages.png" alt="Messages button">
+                    </a>
+                </div>
+                <div class="button h-margin">
+                    <a class="weak" href="">
+                        <img class="contained-img" src="images/notification.png" alt="Notification button">
+                    </a>
+                </div>
+                <div class="portrait h-margin">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/square.jpg" alt="Your profile button">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!--video section-->
+        <div class="video-section flex-col">
+            <!--video container-->
+            <div>
+                <iframe src="https://www.youtube.com/embed/CwsDKy6xsAQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--video info-->
+            <div class="flex-col">
+                <!--header of video info and buttons-->
+                <div class="flex-col space-evenly">
+                    <p class="v-margin bold">Dig to build Most Awesome Underground House and Underground Swimming Pool</p>
+                    <div class="flex-row space-between">
+                        <p class="gray v-margin">123,456 views</p>
+                        <!--buttons-->
+                        <div class="flex-row space-evenly align-center v-margin">
+                            <!--like button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                    </div>
+                                    <p class="info bold">13K</p>
+                                </div>
+                            </a>
+                            <!--dislike button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                                    </div>
+                                    <p class="info bold">473</p>
+                                </div>
+                            </a>
+                            <!--share button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/share.png" alt="Share button">
+                                    </div>
+                                    <p class="info bold">SHARE</p>
+                                </div>
+                            </a>
+                            <!--save button-->
+                            <a class="weak" href="">
+                                <div class="flex-row align-center">
+                                    <div class="button">
+                                        <img class="contained-img" src="images/save.png" alt="Save button">
+                                    </div>
+                                    <p class="info bold">SAVE</p>
+                                </div>
+                            </a>
+                            <!--more button-->
+                            <a class="weak" href="">
+                                <div class="button">
+                                    <img class="contained-img" src="images/more.png" alt="More button">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--"show more" section of video info-->
+                <div id="video-info-container" class="flex-row align-start v-padding border-bot border-top">
+                    <div class="portrait">
+                        <a href="">
+                            <img class="contained-img round-img" src="images/1.jpg" alt="Publisher profile image">
+                        </a>
+                    </div>
+                    <div class="flex-col align-start">
+                        <div class="flex-col align-start aligned">
+                            <a href="">
+                                <p class="black bold no-margin">Publisher</p>
+                            </a>
+                            <p class="info no-margin">Publication date</p>
+                        </div>
+                        <div class="v-padding aligned">
+                            <p class="no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget
+                                ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla
+                                at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis,
+                                felis ut adipiscing</p>
+                            <p class="no-margin">...</p>
+                            <p class="no-margin">...</p>
+                            <p class="no-margin">...</p>
+                            <p class="no-margin">And more info.</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div id=subscribe-button>
+                            <p class="bold">SUBSCRIBE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--comments section-->
+        <div class="comment-section flex-col">
+            <div class="flex-row align-center v-padding">
+                <p>7 Comments</p>
+                <a href="">
+                    <p class="info bold color-changing">SORT BY</p>
+                </a>
+            </div>
+            <div class="flex-row align-center">
+                <div class="portrait">
+                    <img class="contained-img round-img" src="images/square.jpg" alt="Your profile image">
+                </div>
+                <input class="comment-input" type="text" placeholder="Add a public comment...">
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/jedi-stitch.jpg"
+                            alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">Somebody's amazing comment</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/2019-03-30.jpg"
+                            alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">Other comment</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/jedi-stitch.jpg"
+                            alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">And another comment</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/2019-03-30.jpg"
+                            alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">And now a big comment. Not a wall-of-text, but a big comment. Somebody really
+                        want to show everyone his proudly and enormous opinion about some subject that doesn't matter at
+                        all. Weeeee!</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/lila.jpg" alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">More comments</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/jedi-stitch.jpg"
+                            alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">More comments</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row comment">
+                <div class="portrait">
+                    <a href="">
+                        <img class="contained-img round-img" src="images/lila.jpg" alt="Comment author profile image">
+                    </a>
+                </div>
+                <div class="flex-col align-start">
+                    <div class="flex-row aligned">
+                        <a href="">
+                            <p class="black bold no-margin">Name</p>
+                        </a>
+                        <div class="h-margin"><a href="">
+                                <p class="color-changing info no-margin">date</p>
+                            </a></div>
+                    </div>
+                    <p class="aligned">And more comments</p>
+                    <div class="flex-row align-center aligned spaced">
+                        <div class="flex-row align-center">
+                            <div class="button">
+                                <a class="weak" href="">
+                                    <img class="contained-img" src="images/up-thumb.png" alt="Like button">
+                                </a>
+                            </div>
+                            <p class="info">#Likes</p>
+                        </div>
+                        <div class="button h-margin">
+                            <a class="weak" href="">
+                                <img class="contained-img" src="images/down-thumb.png" alt="Dislike button">
+                            </a>
+                        </div>
+                        <div class="h-margin">
+                            <a class="weak" href="">
+                                <p class="info bold no-margin h-padding">REPLY</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="flex-row algin-center">
+                            <p class="black bold aligned">View replies</p>
+                            <div class="button">
+                                <img class="contained-img" src="images/down.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--advertising section-->
+        <div class="ad-section">
+            <a href=""><img class="contained-img" src="images/ad.jpeg" alt="Some amazing ad"></a>
+        </div>
+        <!--sidebar section-->
+        <div class="side-section flex-col border-top v-padding">
+            <div class="flex-row side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/doomsday-rule.jpg" alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row  side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/images.jpeg" alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Really really really long Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/index.jpeg" alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/random-random-31127318-491-348.jpg"
+                            alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/oGQCwhP.jpg" alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-row side-item">
+                <div class="side-img">
+                    <a href="">
+                        <img class="contained-img" src="images/pics-1-2.jpg" alt="Recommended video thumbnail">
+                    </a>
+                </div>
+                <div class="flex-col">
+                    <a href="">
+                        <p class="bold black">Video Title</p>
+                        <div class="v-margin">
+                            <p class="info">Publisher</p>
+                            <p class="info">Number of views</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
